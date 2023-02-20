@@ -22,8 +22,8 @@ public final class RemovalUtility {
 
     private static Logger logger = LoggerFactory.getLogger(RemovalUtility.class);
 
-    public static final int SELECTION_SIZE = 25;
-    public static final int QUERY_STEP = 30;
+    public static final int SELECTION_SIZE = 250;
+    public static final int QUERY_STEP = 300;
 
     public static void removeNode(String[] paths) throws RepositoryException {
         JCRTemplate.getInstance().doExecuteWithSystemSession(new JCRCallback<Void>() {
